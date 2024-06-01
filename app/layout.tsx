@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import './global.css';
 import {promises as fs } from 'fs';
 import { MenuItem } from "@/types/menuItem";
 import theme from "@/theme";
