@@ -1,0 +1,20 @@
+{
+    "data": [
+        {
+            "name": "Home",
+            "link": "/"
+        },
+        {
+            "name": "Intro",
+            "link": "/intro"
+        },
+        {
+            "name": "Experience",
+            "link": "/experience"
+        },
+        {
+            "name": "Blog",
+            "link": "/blog"
+        }
+    ]
+}
