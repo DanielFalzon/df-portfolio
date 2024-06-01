@@ -1,10 +1,12 @@
 // Implementation of https://mui.com/material-ui/react-app-bar/#responsive-app-bar-with-drawer
 'use client'
 
+import { FC, useState } from "react";
+
 import { AppBar, Box, Toolbar, Typography, IconButton, Button } from "@mui/material";
 import { Menu } from '@mui/icons-material';
-import { FC, useState } from "react";
 import { MenuItem } from "@/types/menuItem";
+import MenuDrawer from "../menu-drawer/MenuDrawer";
 
 type HeaderMenuProps = {
     menuItems: MenuItem[]
@@ -16,11 +18,11 @@ const HeaderMenu: FC<HeaderMenuProps> = ({menuItems}) => {
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
     }
-    
+
     return (
         <Box sx={{ display: 'flex'}}>
             <AppBar component="nav">
-                <Toolbar>
+                <Toolbar sx={{height: '5rem'}}>
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
@@ -46,6 +48,13 @@ const HeaderMenu: FC<HeaderMenuProps> = ({menuItems}) => {
                     </Box>
                 </Toolbar>
             </AppBar>
+            <nav>
+                <MenuDrawer 
+                    enabled={mobileOpen}
+                    callback={handleDrawerToggle}
+                    menuItems={menuItems} 
+                />
+            </nav>
         </Box>
     )
 }
