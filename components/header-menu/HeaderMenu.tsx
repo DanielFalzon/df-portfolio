@@ -5,7 +5,7 @@ import { FC, useState } from "react";
 
 import { AppBar, Box, Toolbar, Typography, IconButton, Button } from "@mui/material";
 import { Menu } from '@mui/icons-material';
-import { MenuItem } from "@/types/menuItem";
+import { MenuItem } from "@/types/Types";
 import MenuDrawer from "../menu-drawer/MenuDrawer";
 
 type HeaderMenuProps = {
@@ -21,7 +21,7 @@ const HeaderMenu: FC<HeaderMenuProps> = ({menuItems}) => {
 
     return (
         <Box sx={{ display: 'flex'}}>
-            <AppBar component="nav">
+            <AppBar component="nav" elevation={0}>
                 <Toolbar sx={{height: '5rem'}}>
                     <IconButton
                         color="inherit"

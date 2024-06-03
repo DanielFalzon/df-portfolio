@@ -1,5 +1,5 @@
 import { Box, Divider, Drawer, List, ListItem, ListItemButton, ListItemText, Typography } from "@mui/material"
-import { MenuItem } from "@/types/menuItem";
+import { MenuItem } from "@/types/Types";
 import { FC } from "react"
 
 type HandleClose = () => void;

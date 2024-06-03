@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import './global.css';
 import {promises as fs } from 'fs';
-import { MenuItem } from "@/types/menuItem";
+import { MenuItem } from "@/types/Types";
 import theme from "@/theme";
 import HeaderMenu from "@/components/header-menu/HeaderMenu";
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';

@@ -20,10 +20,20 @@ const Banner = () => {
             }}
         >
             <Container disableGutters>
-                <Typography sx={{fontSize: '1.6rem'}}>Hi, my name is</Typography>
-                <Typography variant="h1" sx={{fontSize: '6rem'}}>Daniel Falzon</Typography>
-                <Typography sx={{fontSize: '1.6rem'}}>Software Engineer in Malta</Typography>
-                <Button variant="outlined" color="inherit" size="large" sx={{ width: '100%', height: '4rem', marginTop: '2rem'}}>
+                <Typography sx={{fontSize: '1.6rem', color: 'white'}}>Hi, my name is</Typography>
+                <Typography variant="h1" sx={{fontSize: '6rem', color: 'white'}}>Dan Falzon</Typography>
+                <Typography sx={{fontSize: '1.6rem', color: 'white'}}>Software Engineer</Typography>
+                <Typography sx={{fontSize: '1.6rem', color: 'white'}}>Engineering Manager</Typography>
+                <Button 
+                    variant="outlined" 
+                    color='secondary'
+                    size="large" 
+                    sx={{ 
+                        width: {xs: '100%', md: '210px'}, 
+                        height: '4rem', 
+                        marginTop: '2rem'
+                    }}
+                >
                     GET IN TOUCH
                 </Button>
             </Container>
