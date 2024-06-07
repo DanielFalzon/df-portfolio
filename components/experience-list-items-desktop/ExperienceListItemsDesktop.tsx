@@ -12,14 +12,6 @@ type TabPanelProps = {
     value: number
 }
 
-const TabItemProps = (index: number) => {
-    return {
-        key: `experience-vertical-tab-${index}`,
-        id: `experience-vertical-tab-${index}`,
-        'aria-controls': `vertical-tabpanel-${index}`
-    }
-}
-
 const TabPanel:FC<TabPanelProps> = ({children, index, value}) => (
     <div 
         role="tabpanel"
@@ -28,8 +20,8 @@ const TabPanel:FC<TabPanelProps> = ({children, index, value}) => (
         aria-labelledby={`vertical-tab-${index}`}
     >
         {value === index && (
-        <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
+        <Box sx={{ paddingLeft: '3.5rem' }}>
+          <Typography variant="body1">{children}</Typography>
         </Box>
       )}
     </div>
@@ -44,7 +36,7 @@ const ExperienceListItemsDesktop:FC<ExperienceListItemsDesktopProps> = ({experie
 
     return(
         <Box
-            sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex' }}
+            sx={{ bgcolor: 'background.paper', display: 'flex' }}
         >
             <Tabs
                 orientation="vertical"
@@ -53,16 +45,31 @@ const ExperienceListItemsDesktop:FC<ExperienceListItemsDesktopProps> = ({experie
                 aria-label="Experience vertical tabs"
                 variant="standard"
                 sx={{
-                    width: '700px'
+                    overflow: 'visible'
                 }}
             >
                 {experienceItems.map((item, index) => (
-                    <Tab label={item.company} {...TabItemProps(index)} />
+                    <Tab 
+                        label={
+                            <Typography variant="h4">
+                                {item.company}
+                            </Typography>
+                        } 
+                        key={`experience-vertical-tab-${index}`}
+                        id={`experience-vertical-tab-${index}`}
+                        aria-controls={`vertical-tabpanel-${index}`}
+                        disableRipple={true}
+                        sx={{
+                            padding: '3rem 0px 3rem 1.5rem',
+                            width: '22rem',
+                            borderRight: 0
+                        }}
+                    />
                 ))}
             </Tabs>
             {experienceItems.map((item, index) => (
                 <TabPanel key={index} value={value} index={index}>
-                    {item.description}
+                        {item.description}
                 </TabPanel>
             ))}
 
