@@ -3,17 +3,22 @@ import {promises as fs } from 'fs';
 import About from "@/components/about/About";
 import Banner from "@/components/banner/Banner";
 import styles from "./page.module.css";
-import { ContentItem } from '@/types/Types';
+import { ContentItem, ExperienceItem } from '@/types/Types';
+import ExperienceList from '@/components/experience-list/ExperienceList';
 
 export default async function Home() {
 
-  const response = await fs.readFile(process.cwd() + '/app/data/aboutContent.json', 'utf8');
-  const contentItems: ContentItem[] = JSON.parse(response).data;
+  const aboutContentResponse = await fs.readFile(process.cwd() + '/app/data/aboutContent.json', 'utf8');
+  const aboutContentItems: ContentItem[] = JSON.parse(aboutContentResponse).data;
+
+  const experienceContentResponse = await fs.readFile(process.cwd() + '/app/data/experienceContent.json', 'utf8');
+  const experienceContentItems: ExperienceItem[] = JSON.parse(experienceContentResponse).data;
 
   return (
     <main className={styles.main}>
       <Banner />
-      <About contentItems={contentItems} />   
+      <About contentItems={aboutContentItems} />   
+      <ExperienceList experienceItems={experienceContentItems} />
     </main>
   );
 }

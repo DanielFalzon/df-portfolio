@@ -6,7 +6,7 @@ const Banner = () => {
         <Box 
             color=""
             sx={{ 
-                width: '100vw',
+                width: '100%',
                 height: {xs: 'auto', md: '700px'},
                 display: 'flex',
                 alignContent: 'center',

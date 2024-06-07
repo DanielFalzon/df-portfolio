@@ -18,6 +18,9 @@ const theme = createTheme({
     h3: {
       margin: '1rem 0rem'
     },
+    h4: {
+      fontSize: '1.2rem'
+    },
     body1: {
       marginBottom: '1rem'
     }

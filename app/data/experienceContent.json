@@ -1,0 +1,58 @@
+{
+    "data": [
+        {
+            "company": "KingMakers",
+            "dayFrom": "2024-09-01",
+            "dayTo": null,
+            "position": "Engineering Manager",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur nulla sed orci feugiat sagittis. Curabitur egestas libero pulvinar, iaculis purus eget, tempus ipsum. Phasellus tincidunt in velit sit amet auctor. Morbi neque enim, venenatis eu placerat a, interdum quis augue. Proin tincidunt metus ac mi viverra, eget mattis mi facilisis. Nulla in blandit orci. Fusce ultrices, ipsum eu accumsan tristique, elit arcu cursus purus, a tincidunt mauris dui tincidunt purus.",
+            "skills": [
+                ".NET",
+                "React / Remix",
+                "Azure",
+                "Terraform",
+                "People Management",
+                "Project Management"
+            ]
+        },
+        {
+            "company": "RakeTech",
+            "dayFrom": "2021-09-01",
+            "dayTo": "2024-08-30",
+            "position": "Web Developer",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur nulla sed orci feugiat sagittis. Curabitur egestas libero pulvinar, iaculis purus eget, tempus ipsum. Phasellus tincidunt in velit sit amet auctor. Morbi neque enim, venenatis eu placerat a, interdum quis augue. Proin tincidunt metus ac mi viverra, eget mattis mi facilisis. Nulla in blandit orci. Fusce ultrices, ipsum eu accumsan tristique, elit arcu cursus purus, a tincidunt mauris dui tincidunt purus.",
+            "skills": [
+                "React",
+                "PHP Laravel",
+                "WordPress",
+                "Leadership"
+            ]
+        },
+        {
+            "company": "Avantech",
+            "dayFrom": "2019-09-01",
+            "dayTo": "2021-08-29",
+            "position": "Software Developer",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur nulla sed orci feugiat sagittis. Curabitur egestas libero pulvinar, iaculis purus eget, tempus ipsum. Phasellus tincidunt in velit sit amet auctor. Morbi neque enim, venenatis eu placerat a, interdum quis augue. Proin tincidunt metus ac mi viverra, eget mattis mi facilisis. Nulla in blandit orci. Fusce ultrices, ipsum eu accumsan tristique, elit arcu cursus purus, a tincidunt mauris dui tincidunt purus.",
+            "skills": [
+                ".NET Framework MVC",
+                ".NET Core",
+                "C#",
+                "Angular"
+            ]
+        },
+        {
+            "company": "RakeTech",
+            "dayFrom": "2019-08-30",
+            "dayTo": "2016-08-29",
+            "position": "Web Developer Intern",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur nulla sed orci feugiat sagittis. Curabitur egestas libero pulvinar, iaculis purus eget, tempus ipsum. Phasellus tincidunt in velit sit amet auctor. Morbi neque enim, venenatis eu placerat a, interdum quis augue. Proin tincidunt metus ac mi viverra, eget mattis mi facilisis. Nulla in blandit orci. Fusce ultrices, ipsum eu accumsan tristique, elit arcu cursus purus, a tincidunt mauris dui tincidunt purus.",
+            "skills": [
+                "React",
+                "PHP Laravel",
+                "WordPress",
+                "Leadership"
+            ]
+        }
+    ]
+}
