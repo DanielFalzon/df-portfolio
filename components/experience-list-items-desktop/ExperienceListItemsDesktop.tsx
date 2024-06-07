@@ -1,3 +1,4 @@
+import { formatDate } from "@/app/utils";
 import { ExperienceItem } from "@/types/Types";
 import { Box, Tab, Tabs, Typography } from "@mui/material";
 import { FC, ReactNode, SyntheticEvent, useState } from "react";
@@ -9,10 +10,11 @@ type ExperienceListItemsDesktopProps = {
 type TabPanelProps = {
     children?: ReactNode,
     index: number,
-    value: number
+    value: number,
+    content:ExperienceItem
 }
 
-const TabPanel:FC<TabPanelProps> = ({children, index, value}) => (
+const TabPanel:FC<TabPanelProps> = ({children, index, value, content}) => (
     <div 
         role="tabpanel"
         hidden={value !== index}
@@ -21,7 +23,15 @@ const TabPanel:FC<TabPanelProps> = ({children, index, value}) => (
     >
         {value === index && (
         <Box sx={{ paddingLeft: '3.5rem' }}>
-          <Typography variant="body1">{children}</Typography>
+            <Typography
+                sx={{
+                    fontStyle: 'italic',
+                    fontWeight: 'bold'
+                }}
+            >
+                {formatDate(content.dayFrom) + ' - ' + formatDate(content.dayTo)}
+            </Typography>
+            <Typography variant="body1">{content.description}</Typography>
         </Box>
       )}
     </div>
@@ -68,7 +78,12 @@ const ExperienceListItemsDesktop:FC<ExperienceListItemsDesktopProps> = ({experie
                 ))}
             </Tabs>
             {experienceItems.map((item, index) => (
-                <TabPanel key={index} value={value} index={index}>
+                <TabPanel 
+                    key={index} 
+                    value={value} 
+                    index={index}
+                    content={item}
+                >
                         {item.description}
                 </TabPanel>
             ))}

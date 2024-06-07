@@ -11,8 +11,8 @@ export type ContentItem = {
 
 export type ExperienceItem = {
     company: string,
-    dayFrom: Date,
-    dayTo: Date | undefined,
+    dayFrom: string,
+    dayTo: string | undefined,
     position: string,
     description: string,
     skills: string[]

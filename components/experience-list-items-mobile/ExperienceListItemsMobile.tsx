@@ -1,8 +1,9 @@
 'use client'
 
+import { formatDate } from "@/app/utils";
 import { ExperienceItem } from "@/types/Types";
 import { ExpandMore } from "@mui/icons-material";
-import { Accordion, AccordionDetails, AccordionSummary, Box, Typography } from "@mui/material";
+import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/material";
 import { FC, SyntheticEvent, useState } from "react";
 
 type ExperienceListItemsMobileProps = {
@@ -16,7 +17,7 @@ const ExperienceListItemsMobile: FC<ExperienceListItemsMobileProps> = ({experien
         setExpanded(isExpanded ? panel : false);
     }
 
-    return(
+        return(
         <>
             {experienceItems.map((item, index) => (
                 <Accordion
@@ -39,6 +40,15 @@ const ExperienceListItemsMobile: FC<ExperienceListItemsMobileProps> = ({experien
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
+                        <Typography 
+                            variant="body1"
+                            sx={{
+                                fontStyle: 'italic',
+                                fontWeight: 'bold'
+                            }}
+                        >
+                            {formatDate(item.dayFrom) + ' - ' + formatDate(item.dayTo)}
+                        </Typography>
                         <Typography variant="body1">
                             {item.description}
                         </Typography>
