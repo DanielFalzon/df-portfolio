@@ -21,9 +21,9 @@ export default async function Home() {
   return (
     <main className={styles.main}>
       <Banner />
-      <About contentItems={aboutContentItems} />   
-      <ExperienceList experienceItems={experienceContentItems} />
-      <Recommendations recommendations={recommendations} />
+      {aboutContentItems && <About contentItems={aboutContentItems} />}   
+      {experienceContentItems && <ExperienceList experienceItems={experienceContentItems} />}
+      {recommendations && <Recommendations recommendations={recommendations} />}
     </main>
   );
 }

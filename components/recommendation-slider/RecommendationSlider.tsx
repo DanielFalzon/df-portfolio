@@ -27,8 +27,8 @@ const RecommendationSlider: FC<RecommendationSliderProps> = ({recommendations}) 
     return(
         <Box
             sx={{
-                padding:'2rem',
-                border: '3px solid'
+                padding:'3rem 4rem',
+                border: '2px solid'
             }}
         >
             <Slider {...settings}>
@@ -40,6 +40,7 @@ const RecommendationSlider: FC<RecommendationSliderProps> = ({recommendations}) 
                             sx={{
                                 fontSize: '1.5rem',
                                 fontWeight: 'bold',
+                                textAlign: 'left',
                                 fontStyle: 'italic',
                                 padding: {md: '2rem 0px'}
                             }}
