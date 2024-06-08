@@ -12,7 +12,7 @@ const theme = createTheme({
   typography: {
     fontFamily: roboto.style.fontFamily,
     h2: {
-      margin: '2rem 0rem',
+      margin: '4rem 0rem',
       textAlign: 'left'
     },
     h3: {
@@ -22,7 +22,8 @@ const theme = createTheme({
       fontSize: '1.2rem'
     },
     body1: {
-      marginBottom: '1rem'
+      marginBottom: '1rem',
+      fontSize: '1.2rem'
     }
   },
   palette: {

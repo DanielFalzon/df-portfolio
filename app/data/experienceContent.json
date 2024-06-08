@@ -53,6 +53,19 @@
                 "WordPress",
                 "Leadership"
             ]
+        },
+        {
+            "company": "Computime",
+            "dayFrom": "2019-08-30",
+            "dayTo": "2016-08-29",
+            "position": "Web Developer Intern",
+            "description": "555 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur nulla sed orci feugiat sagittis. Curabitur egestas libero pulvinar, iaculis purus eget, tempus ipsum. Phasellus tincidunt in velit sit amet auctor. Morbi neque enim, venenatis eu placerat a, interdum quis augue. Proin tincidunt metus ac mi viverra, eget mattis mi facilisis. Nulla in blandit orci. Fusce ultrices, ipsum eu accumsan tristique, elit arcu cursus purus, a tincidunt mauris dui tincidunt purus.",
+            "skills": [
+                "React",
+                "PHP Laravel",
+                "WordPress",
+                "Leadership"
+            ]
         }
     ]
 }

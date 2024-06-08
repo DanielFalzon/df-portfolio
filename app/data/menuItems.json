@@ -13,6 +13,10 @@
             "link": "/experience"
         },
         {
+            "name": "Recommendations",
+            "link": "/recommendations"
+        },
+        {
             "name": "Blog",
             "link": "/blog"
         }

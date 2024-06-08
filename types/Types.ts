@@ -18,6 +18,12 @@ export type ExperienceItem = {
     skills: string[]
 }
 
+export type Recommendation = {
+    text: string,
+    author: string,
+    position: string
+}
+
 export type ImageProperties = {
     width: number,
     height: number,
