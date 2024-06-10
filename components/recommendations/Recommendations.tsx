@@ -27,11 +27,11 @@ const Recommendations: FC<RecommendationsProps> = ({recommendations}) => {
                 sx={{ 
                     width: {xs: '100%', md: '210px'}, 
                     height: '4rem', 
-                    marginTop: '1rem'
+                    marginTop: '4rem'
                 }}
             >
                     READ MORE
-            </Button>
+            </Button> 
         </Container>
     )
 }
