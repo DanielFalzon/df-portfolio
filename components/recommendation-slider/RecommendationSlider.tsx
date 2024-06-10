@@ -27,8 +27,9 @@ const RecommendationSlider: FC<RecommendationSliderProps> = ({recommendations}) 
     return(
         <Box
             sx={{
-                padding:'3rem 4rem',
-                border: '2px solid'
+                padding:{xs: '2rem 1rem', md: '3rem 4rem'},
+                border: '3px solid',
+                borderImage: 'linear-gradient(to bottom, #c2a703, black) 1'
             }}
         >
             <Slider {...settings}>

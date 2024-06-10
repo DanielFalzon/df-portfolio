@@ -23,7 +23,7 @@ const ExperienceList: FC<ExperienceListProps> = ({experienceItems}) => {
             <Box
                 sx={{
                     borderLeft: '3px solid',   // Define the width of the left border
-                    borderImage: 'linear-gradient(to bottom, red, blue) 1', // Apply a gradient to the left border
+                    borderImage: 'linear-gradient(to bottom, #c2a703, black) 1', // Apply a gradient to the left border
                 }}
             >
             {isMobile ?

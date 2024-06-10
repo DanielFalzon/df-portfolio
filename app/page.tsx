@@ -6,6 +6,7 @@ import styles from "./page.module.css";
 import { ContentItem, ExperienceItem, Recommendation } from '@/types/Types';
 import ExperienceList from '@/components/experience-list/ExperienceList';
 import Recommendations from '@/components/recommendations/Recommendations';
+import Contact from '@/components/contact/Contact';
 
 export default async function Home() {
 
@@ -24,6 +25,7 @@ export default async function Home() {
       {aboutContentItems && <About contentItems={aboutContentItems} />}   
       {experienceContentItems && <ExperienceList experienceItems={experienceContentItems} />}
       {recommendations && <Recommendations recommendations={recommendations} />}
+      <Contact />
     </main>
   );
 }
