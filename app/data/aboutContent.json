@@ -6,37 +6,19 @@
         },
         {
             "type": "p",
-            "content": "Nulla posuere, sem nec interdum lacinia, odio ipsum vehicula mi, eget mollis est ipsum nec mauris. Mauris vehicula, risus at feugiat accumsan, ipsum magna viverra justo, sit amet efficitur eros sem a urna. Aenean consequat porttitor tincidunt. Nam molestie iaculis sem, vitae efficitur felis sollicitudin ac. Ut dolor massa, pharetra quis vehicula id, fermentum et augue. Phasellus ut tellus quam. Sed porta finibus dui et rutrum."
+            "content": "My name is Daniel and I'm from the Mediterranean island of Malta. From a young age, I’ve been fascinated by Software Engineering, which led me to graduate in Computing and IT from The Open University, a distance learning University based in the UK. As I gained more experience in the field, I discovered a passion for Engineering Management and grew to appreciate the immense value this role brings when done right."
         },
         {
             "type": "p",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod tristique est, ut venenatis nisi commodo vitae. Aliquam ullamcorper diam vitae hendrerit ultricies. Quisque vulputate nec sapien eu porta. Vivamus scelerisque dolor at metus scelerisque, fringilla scelerisque tortor congue. Cras iaculis ligula dui, sit amet ullamcorper est rhoncus ac. Morbi tristique, odio nec commodo commodo, neque leo porttitor ligula, ac dignissim turpis eros vitae tellus. Aenean non orci id risus congue iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris at posuere ipsum, id hendrerit libero. Donec in mauris feugiat, consequat libero imperdiet, dapibus metus. Praesent tempor consectetur lectus, eu aliquet est pulvinar nec. Nam malesuada felis nisi, eget tincidunt eros suscipit vel. Duis ac risus felis."
-        },
-        {
-            "type": "img",
-            "content": "/bunny.jpg",
-            "ImageProperties": {
-                "width": 250,
-                "height": 250,
-                "alt": "A cat is in the making"
-            }
-        },
-        {
-            "type": "h3",
-            "content": "My New header content"
+            "content": "Having worked B2B with several local software houses and B2C in the iGaming industry, I’ve developed a diverse skill set. My expertise ranges from data analysis, requirements gathering, and team management to system architecture and software development, covering both backend and frontend systems. Current and past positions provided me with an environment where I can to optimize and scale teams to meet the ever-growing expectations of the systems under my responsibility."
         },
         {
             "type": "p",
-            "content": "Nulla posuere, sem nec interdum lacinia, odio ipsum vehicula mi, eget mollis est ipsum nec mauris. Mauris vehicula, risus at feugiat accumsan, ipsum magna viverra justo, sit amet efficitur eros sem a urna. Aenean consequat porttitor tincidunt. Nam molestie iaculis sem, vitae efficitur felis sollicitudin ac. Ut dolor massa, pharetra quis vehicula id, fermentum et augue. Phasellus ut tellus quam. Sed porta finibus dui et rutrum."
+            "content": "Although these positions have provided invaluable experience and allowed me to grow professionally, I am also eager to offer my expertise to individuals and businesses beyond my full-time occupation. Therefore, in addition to introducing myself and my skill set, this portfolio will serve as a showcase of my abilities through a list of past projects and blog posts."
         },
         {
-            "type": "img",
-            "content": "/medium.webp",
-            "ImageProperties": {
-                "width": 300,
-                "height": 300,
-                "alt": "A cat is in the making"
-            }
+            "type": "p",
+            "content": "Hope you enjoy your visit and do reach out if you wish to collaborate on a project."
         }
     ]
 }
