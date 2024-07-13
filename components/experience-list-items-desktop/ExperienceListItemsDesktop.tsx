@@ -36,8 +36,10 @@ const TabPanel:FC<TabPanelProps> = ({children, index, value, content}) => (
             <Typography variant="body1">{content.description}</Typography>
             <List dense={true}>
                 {
-                    content.skills.map(skill => (
-                        <ListItem>
+                    content.skills.map((skill, i) => (
+                        <ListItem
+                            key={`skill-${i}`}
+                        >
                             <ListItemIcon>
                                 <CheckCircleOutline />
                             </ListItemIcon>

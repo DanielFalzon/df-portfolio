@@ -55,8 +55,10 @@ const ExperienceListItemsMobile: FC<ExperienceListItemsMobileProps> = ({experien
                         </Typography>
                         <List dense={true}>
                             {
-                                item.skills.map(skill => (
-                                    <ListItem>
+                                item.skills.map((skill, i) => (
+                                    <ListItem
+                                    key={`skill-${i}`}
+                                    >
                                         <ListItemIcon>
                                             <CheckCircleOutline />
                                         </ListItemIcon>
