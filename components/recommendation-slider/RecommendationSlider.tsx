@@ -13,6 +13,7 @@ type RecommendationSliderProps = {
 
 const RecommendationSlider: FC<RecommendationSliderProps> = ({recommendations}) => {
     const settings = {
+        arrows: false,
         dots: true,
         fade: true,
         infinite: true,
@@ -39,7 +40,6 @@ const RecommendationSlider: FC<RecommendationSliderProps> = ({recommendations}) 
                             key={`recom-slide-${index}`}
                             variant="body1"
                             sx={{
-                                fontSize: '1.5rem',
                                 textAlign: 'left',
                                 padding: {md: '2rem 0px'}
                             }}

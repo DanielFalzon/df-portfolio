@@ -20,18 +20,6 @@ const Recommendations: FC<RecommendationsProps> = ({recommendations}) => {
                 Things People Say
             </Typography>
             <RecommendationSlider recommendations={recommendations} />
-            <Button 
-                variant="outlined" 
-                color='primary'
-                size="large" 
-                sx={{ 
-                    width: {xs: '100%', md: '210px'}, 
-                    height: '4rem', 
-                    marginTop: '1rem'
-                }}
-            >
-                    READ MORE
-            </Button>
         </Container>
     )
 }

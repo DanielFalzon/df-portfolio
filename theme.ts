@@ -1,6 +1,6 @@
 'use client';
 import { Roboto } from 'next/font/google';
-import { createTheme } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { Raleway } from "next/font/google";
 
 const roboto = Roboto({
@@ -25,18 +25,20 @@ const theme = createTheme({
     },
     h3: {
       margin: '1rem 0rem'
-    },
-    h4: {
-      fontSize: '1.2rem'
+
     },
     body1: {
       marginBottom: '1rem',
       fontSize: '1.2rem'
+    },
+    body2: {
+      marginBottom: '1rem',
+      fontSize: '1rem'
     }
   },
   palette: {
     primary: {
-      main: '#202124'
+      main: '#32406e'
     },
     secondary: {
       main: '#ffff'
@@ -47,7 +49,7 @@ const theme = createTheme({
       styleOverrides: {
         textColorPrimary: {
           '&.Mui-selected': {
-            color: '#c2a703'
+            color: '#32406e'
           }
         }
       }
@@ -55,4 +57,4 @@ const theme = createTheme({
   }
 });
 
-export default theme;
+export default responsiveFontSizes(theme);

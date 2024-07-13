@@ -14,7 +14,7 @@ const ContentItemRenderer: FC<{item: ContentItem}> = ({ item }) => {
         case ContentItemType.h3:
             return <Typography variant={item.type}>{item.content}</Typography>
         case ContentItemType.p:
-            return <Typography variant="body1">{item.content}</Typography>
+            return <Typography variant="body2">{item.content}</Typography>
         case ContentItemType.img:
             if(item.ImageProperties){
                 return (

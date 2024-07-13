@@ -1,5 +1,7 @@
+import Image from "next/image";
 import { Box, Button, Container, Typography } from "@mui/material";
-import { Person } from "@mui/icons-material";
+import profilepic from "./profilepic.png";
+
 
 const Banner = () => {
     return(
@@ -17,7 +19,8 @@ const Banner = () => {
         >
             <Container
                 sx={{
-                    height: {xs: 'auto', md: '600px'},
+                    height: {xs: 'auto', md: '595px'},
+                    overflow: 'hidden',
                     display: 'flex',
                     alignContent: 'center',
                     alignItems: 'center',
@@ -48,13 +51,11 @@ const Banner = () => {
                     width: 'auto',
                     textAlign: 'center'
                 }}>
-                    <Person sx={{
-                        height: '100%',
-                        width: '100%',
-                        maxWidth: '400px',
-                        objectFit: 'cover',
-                        objectPosition: 'center'
-                    }} />
+
+                    <Image 
+                        src={profilepic}
+                        alt="Picture of Daniel Falzon"
+                    />
                 </Container>
             </Container>
             
