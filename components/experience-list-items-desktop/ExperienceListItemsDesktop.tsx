@@ -1,6 +1,7 @@
 import { formatDate } from "@/app/utils";
 import { ExperienceItem } from "@/types/Types";
-import { Box, Tab, Tabs, Typography } from "@mui/material";
+import { CheckCircleOutline } from "@mui/icons-material";
+import { Box, List, ListItem, ListItemIcon, ListItemText, Tab, Tabs, Typography } from "@mui/material";
 import { FC, ReactNode, SyntheticEvent, useState } from "react";
 
 type ExperienceListItemsDesktopProps = {
@@ -31,7 +32,28 @@ const TabPanel:FC<TabPanelProps> = ({children, index, value, content}) => (
             >
                 {formatDate(content.dayFrom) + ' - ' + formatDate(content.dayTo)}
             </Typography>
+            <Typography variant="body1">{content.position}</Typography>
             <Typography variant="body1">{content.description}</Typography>
+            <List dense={true}>
+                {
+                    content.skills.map((skill, i) => (
+                        <ListItem
+                            key={`skill-${i}`}
+                        >
+                            <ListItemIcon>
+                                <CheckCircleOutline />
+                            </ListItemIcon>
+                            <ListItemText
+                                primary={skill}
+                                sx={{
+                                    marginBottom: 0,    
+                                    marginTop: '1rem'
+                                }}
+                            />
+                        </ListItem>
+                    ))
+                }
+            </List>
         </Box>
       )}
     </div>
@@ -54,6 +76,9 @@ const ExperienceListItemsDesktop:FC<ExperienceListItemsDesktopProps> = ({experie
                 onChange={handleChange}
                 aria-label="Experience vertical tabs"
                 variant="standard"
+                TabIndicatorProps={{
+                    style: { display: 'none' }
+                  }}
                 sx={{
                     overflow: 'visible'
                 }}
@@ -71,8 +96,7 @@ const ExperienceListItemsDesktop:FC<ExperienceListItemsDesktopProps> = ({experie
                         disableRipple={true}
                         sx={{
                             padding: '3rem 0px 3rem 1.5rem',
-                            width: '22rem',
-                            borderRight: 0
+                            width: '22rem'
                         }}
                     />
                 ))}

@@ -1,26 +1,11 @@
-import { GitHub, LinkedIn } from "@mui/icons-material"
-import { Box, Button, ButtonGroup, Container, Typography } from "@mui/material"
+import { LinkedIn, GitHub } from "@mui/icons-material"
+import { Box, Button, Container, Typography } from "@mui/material"
 
 const Contact = () => {
     return(
-        <Container
-            
-            sx={{
-                borderTop: '2px solid',
-                display: 'flex',
-                flexDirection: {xs: 'column', md: 'row'},
-                borderImage: 'linear-gradient(to right, #c2a703, black) 1',
-                marginTop: '4rem',
-                marginBottom: '4rem',
-                width: '100vw'
-            }}
-        >
-            <Box
-                sx={{
-                    flex: '1'
-                }}
-            >
-                <Typography variant='h2'>
+        <Container>
+            <Box>
+                <Typography variant='h2' id="contact">
                     Contact Me
                 </Typography>
                 <Typography variant="body1">
@@ -34,7 +19,7 @@ const Contact = () => {
                     flexDirection: 'column',
                     flex: '1',
                     marginTop: {xs: '2rem', md: '4rem'},
-                    alignItems: 'center',
+                    alignItems: 'end',
                     justifyContent: 'center'
                 }}
                 >
