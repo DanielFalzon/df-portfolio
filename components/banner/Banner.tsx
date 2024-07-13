@@ -48,8 +48,8 @@ const Banner = () => {
                 
                 <Container sx={{
                     marginTop: { xs: '3rem', md: 0},
-                    width: 'auto',
-                    textAlign: 'center'
+                    textAlign: 'center',
+                    position: 'relative'
                 }}>
 
                     <Image 
