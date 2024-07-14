@@ -66,7 +66,7 @@ const Banner = () => {
                             objectFit="scale-down"
                             objectPosition="bottom"
                             style={{
-                                filter: 'brightness(0.9)'
+                                filter: 'brightness(0.95)'
                             }}
                         />
                     </Box>

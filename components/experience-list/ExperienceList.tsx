@@ -2,7 +2,7 @@
 
 import { ExperienceItem } from "@/types/Types";
 import { Box, Container, Typography, useMediaQuery, useTheme } from "@mui/material";
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 import ExperienceListItemsMobile from "../experience-list-items-mobile/ExperienceListItemsMobile";
 import ExperienceListItemsDesktop from "../experience-list-items-desktop/ExperienceListItemsDesktop";
 
@@ -13,7 +13,7 @@ type ExperienceListProps = {
 const ExperienceList: FC<ExperienceListProps> = ({experienceItems}) => {
     
     const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+
     const primaryColor = theme.palette.primary.main;
 
     return(
@@ -27,10 +27,20 @@ const ExperienceList: FC<ExperienceListProps> = ({experienceItems}) => {
                     borderImage: `linear-gradient(to bottom, ${primaryColor}, black) 1`, // Apply a gradient to the left border
                 }}
             >
-            {isMobile ?
-                <ExperienceListItemsMobile experienceItems={experienceItems} /> : 
-                <ExperienceListItemsDesktop experienceItems={experienceItems} />
-            }
+                <Box
+                    sx={{
+                        display: {md: 'none'}
+                    }}
+                >
+                    <ExperienceListItemsMobile experienceItems={experienceItems} /> : 
+                </Box>
+                <Box
+                    sx={{
+                        display: {xs: 'none', md: 'block'}
+                    }}
+                >
+                    <ExperienceListItemsDesktop experienceItems={experienceItems} />
+                </Box>
             </Box>
         </Container>
     )
