@@ -14,16 +14,17 @@ const ExperienceList: FC<ExperienceListProps> = ({experienceItems}) => {
     
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+    const primaryColor = theme.palette.primary.main;
 
     return(
         <Container>
-            <Typography variant="h2">
+            <Typography variant="h2" id='experience'>
                 Experience
             </Typography>
             <Box
                 sx={{
                     borderLeft: '3px solid',   // Define the width of the left border
-                    borderImage: 'linear-gradient(to bottom, #c2a703, black) 1', // Apply a gradient to the left border
+                    borderImage: `linear-gradient(to bottom, ${primaryColor}, black) 1`, // Apply a gradient to the left border
                 }}
             >
             {isMobile ?

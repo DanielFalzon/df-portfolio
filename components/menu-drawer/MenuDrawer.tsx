@@ -32,7 +32,7 @@ const MenuDrawer: FC<MenuDrawerProps> = ({enabled, callback, menuItems}) => {
                 <List>
                     {menuItems.map((item) => (
                     <ListItem key={item.name} disablePadding>
-                        <ListItemButton sx={{ textAlign: 'center' }}>
+                        <ListItemButton sx={{ textAlign: 'center' }} href={item.link}>
                         <ListItemText primary={item.name} />
                         </ListItemButton>
                     </ListItem>

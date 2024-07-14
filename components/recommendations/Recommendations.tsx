@@ -16,6 +16,7 @@ const Recommendations: FC<RecommendationsProps> = ({recommendations}) => {
         >
             <Typography
                 variant="h2"
+                id='recommendations'
             >
                 Things People Say
             </Typography>

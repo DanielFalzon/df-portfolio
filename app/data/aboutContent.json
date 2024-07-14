@@ -1,10 +1,6 @@
 {
     "data": [
         {
-            "type": "h2",
-            "content": "About Me"
-        },
-        {
             "type": "p",
             "content": "My name is Daniel and I'm from the Mediterranean island of Malta. From a young age, I’ve been fascinated by Software Engineering, which led me to graduate in Computing and IT from The Open University, a distance learning University based in the UK. As I gained more experience in the field, I discovered a passion for Engineering Management and grew to appreciate the immense value this role brings when done right."
         },

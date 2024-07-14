@@ -2,19 +2,19 @@
     "data": [
         {
             "name": "Home",
-            "link": "/"
+            "link": "#"
         },
         {
             "name": "About Me",
-            "link": "/about-me"
+            "link": "#about"
         },
         {
             "name": "Experience",
-            "link": "/experience"
+            "link": "#experience"
         },
         {
             "name": "Recommendations",
-            "link": "/recommendations"
+            "link": "#recommendations"
         }
     ]
 }

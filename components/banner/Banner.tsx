@@ -19,7 +19,7 @@ const Banner = () => {
         >
             <Container
                 sx={{
-                    height: {xs: 'auto', md: '595px'},
+                    height: {xs: 'auto', md: '600px'},
                     overflow: 'hidden',
                     display: 'flex',
                     alignContent: 'center',
@@ -48,14 +48,28 @@ const Banner = () => {
                 
                 <Container sx={{
                     marginTop: { xs: '3rem', md: 0},
+                    height: { xs: '300px', md: '100%' },
                     textAlign: 'center',
                     position: 'relative'
                 }}>
-
-                    <Image 
-                        src={profilepic}
-                        alt="Picture of Daniel Falzon"
-                    />
+                     <Box
+                        sx={{
+                            position: 'relative',
+                            width: { xs: '100%', md: '100%' },
+                            height: { xs: '300px', md: '100%' } // Adjust height as needed
+                        }}
+                    >
+                        <Image 
+                            src={profilepic}
+                            alt="Picture of Daniel Falzon"
+                            layout="fill"
+                            objectFit="scale-down"
+                            objectPosition="bottom"
+                            style={{
+                                filter: 'brightness(0.9)'
+                            }}
+                        />
+                    </Box>
                 </Container>
             </Container>
             

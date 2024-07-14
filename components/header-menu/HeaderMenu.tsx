@@ -41,7 +41,7 @@ const HeaderMenu: FC<HeaderMenuProps> = ({menuItems}) => {
                     </Typography>
                     <Box sx={{ display: { xs: 'none', sm: 'block'}}}>
                         {menuItems.map((item) => (
-                            <Button key={item.name} sx={{ color: '#fff'}}>
+                            <Button key={item.name} sx={{ color: '#fff'}} href={item.link}>
                                 {item.name}
                             </Button>
                         ))}
