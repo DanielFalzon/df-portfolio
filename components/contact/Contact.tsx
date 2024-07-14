@@ -8,43 +8,62 @@ const Contact = () => {
                 <Typography variant='h2' id="contact">
                     Contact Me
                 </Typography>
-                <Typography variant="body1">
-                    Wish to reach out to collaborate on a project or discuss one of my blog posts? Feel free to reach out! 
-                </Typography>
-            </Box>
-
-            <Box
-                sx={{
+                <Box sx={{
                     display: 'flex',
-                    flexDirection: 'column',
-                    flex: '1',
-                    marginTop: {xs: '2rem', md: '4rem'},
-                    alignItems: 'end',
-                    justifyContent: 'center'
-                }}
-                >
+                    flexDirection: {xs: 'column', md: 'row'},
+                    alignContent: 'center'
+                }}>
+                    <Typography
+                        variant="body1"
+                        sx={{
+                            marginRight: {xs: 0, md: '3rem'},
+                            marginBottom: {xs: '3rem', md: 0},
+                            alignContent: 'center'
+                        }}
+                    >
+                        Wish to reach out to collaborate on a project or discuss one of my blog posts? Feel free to reach out! 
+                    </Typography>
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: {xs: 'center', md: 'end' },
+                            justifyContent: 'center'
+                        }}
+                        >
 
-                    <Button
-                        key="two"
-                        variant="outlined"
-                        startIcon={<LinkedIn />}
-                        sx={{
-                            width: {xs: '90%', md: '50%'},
-                            marginBottom: '2rem',
-                            height: '70px'
-                        }}
-                    >LinkedIn</Button>
-                    <Button
-                        key="one"
-                        variant="outlined"
-                        startIcon={<GitHub />}
-                        sx={{
-                            width: {xs: '90%', md: '50%'},
-                            height: '70px'
-                        }}
-                    >GitHub</Button>
-                    
+                            <Button
+                                key="two"
+                                variant="outlined"
+                                color="primary"
+                                startIcon={<LinkedIn />}
+                                sx={{
+                                    width: {xs: '90%', md: '50%'},
+                                    marginBottom: '2rem',
+                                    height: '70px',
+                                    minWidth: {md: '500px'},
+                                    color: 'black',
+                                    borderColor: 'black'
+                                }}
+                            >LinkedIn</Button>
+                            <Button
+                                key="one"
+                                variant="outlined"
+                                startIcon={<GitHub />}
+                                sx={{
+                                    width: {xs: '90%', md: '50%'},
+                                    height: '70px',
+                                    minWidth: {md: '500px'},
+                                    color: 'black',
+                                    borderColor: 'black'
+                                }}
+                            >GitHub</Button>
+                    </Box>
+                </Box>
+                
             </Box>
+
+           
         </Container>
     )
 }

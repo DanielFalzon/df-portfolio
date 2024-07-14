@@ -4,7 +4,7 @@ import { Recommendation } from "@/types/Types";
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import { FC } from "react";
 
 type RecommendationSliderProps = {
@@ -24,13 +24,16 @@ const RecommendationSlider: FC<RecommendationSliderProps> = ({recommendations}) 
         slidesToScroll: 1,
         waitForAnimate: false
     }
+
+    const theme = useTheme();
+    const primaryColor = theme.palette.primary.main;
     
     return(
         <Box
             sx={{
                 padding:{xs: '2rem 1rem', md: '3rem 4rem'},
                 border: '2px solid',
-                borderImage: 'linear-gradient(to bottom, #c2a703, black) 1'
+                borderImage: `linear-gradient(to bottom, ${primaryColor}, black) 1`
             }}
         >
             <Slider {...settings}>

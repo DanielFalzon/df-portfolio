@@ -7,6 +7,8 @@ import { ContentItem, ExperienceItem, Recommendation } from '@/types/Types';
 import ExperienceList from '@/components/experience-list/ExperienceList';
 import Recommendations from '@/components/recommendations/Recommendations';
 import Contact from '@/components/contact/Contact';
+import { Box } from '@mui/material';
+import Footer from '@/components/footer/Footer';
 
 export default async function Home() {
 
@@ -26,6 +28,7 @@ export default async function Home() {
       {experienceContentItems && <ExperienceList experienceItems={experienceContentItems} />}
       {recommendations && <Recommendations recommendations={recommendations} />}
       <Contact />
+      <Footer />
     </main>
   );
 }
