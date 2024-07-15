@@ -5,27 +5,29 @@
             "dayFrom": "2024-09-01",
             "dayTo": null,
             "position": "Engineering Manager",
-            "description": "222 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur nulla sed orci feugiat sagittis. Curabitur egestas libero pulvinar, iaculis purus eget, tempus ipsum. Phasellus tincidunt in velit sit amet auctor. Morbi neque enim, venenatis eu placerat a, interdum quis augue. Proin tincidunt metus ac mi viverra, eget mattis mi facilisis. Nulla in blandit orci. Fusce ultrices, ipsum eu accumsan tristique, elit arcu cursus purus, a tincidunt mauris dui tincidunt purus.",
+            "description": "As the current manager of the Casino Engineering team at KingMakers, a leading iGaming operator in the African market, I oversee the development and expansion of our renowned BetKing and SuperSportBet brands. With the company's strategic plans for market expansion, my role involves transforming our single-market Casino product into a versatile, multi-market, and multi-brand platform. Additionally, I lead and mentor the Casino Engineering team, ensuring the delivery of a scalable and high-performance product.",
             "skills": [
                 ".NET",
-                "React / Remix",
-                "Azure",
+                "React with Remix & Next.js",
+                "Azure & ADO",
                 "Terraform",
-                "People Management",
-                "Project Management"
+                "QA & Test Automation",
+                "Scaling Teams",
+                "Mentorship"
             ]
         },
         {
             "company": "RakeTech",
-            "dayFrom": "2021-09-01",
-            "dayTo": "2024-08-30",
-            "position": "Web Developer",
-            "description": "333 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur nulla sed orci feugiat sagittis. Curabitur egestas libero pulvinar, iaculis purus eget, tempus ipsum. Phasellus tincidunt in velit sit amet auctor. Morbi neque enim, venenatis eu placerat a, interdum quis augue. Proin tincidunt metus ac mi viverra, eget mattis mi facilisis. Nulla in blandit orci. Fusce ultrices, ipsum eu accumsan tristique, elit arcu cursus purus, a tincidunt mauris dui tincidunt purus.",
+            "dayFrom": "2021-11-01",
+            "dayTo": "2023-08-30",
+            "position": "Web Developer / Technical Product Owner / Engineering Manager",
+            "description": "Raketech, a leading iGaming affiliate in the European market with products in the US and Japan, provided me with a platform to hone and develop my skills in Engineering Management. Beginning as a WordPress Developer, I swiftly advanced to working on their core sports data service, which underpins the company's Sports affiliate products. I then took on the role of managing the Engineering team for their award-winning Affiliation Cloud platform, a sub-affiliate B2B system that has garnered industry acclaim. To improve delivery efficiency, I introduced Scrum to the Affiliation Cloud team and successfully coordinated integration initiatives with the platform.",
             "skills": [
-                "React",
+                "React with Next.js",
                 "PHP Laravel",
                 "WordPress",
-                "Leadership"
+                "Scaling Teams",
+                "Product Management"
             ]
         },
         {

@@ -39,16 +39,16 @@ const TabPanel:FC<TabPanelProps> = ({children, index, value, content}) => (
                     content.skills.map((skill, i) => (
                         <ListItem
                             key={`skill-${i}`}
+                            sx={{
+                                marginY: '0.5rem'
+                            }}
                         >
                             <ListItemIcon>
                                 <CheckCircleOutline />
                             </ListItemIcon>
                             <ListItemText
                                 primary={skill}
-                                sx={{
-                                    marginBottom: 0,    
-                                    marginTop: '1rem'
-                                }}
+                                primaryTypographyProps={{ marginBottom: '0px' }}
                             />
                         </ListItem>
                     ))

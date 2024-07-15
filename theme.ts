@@ -53,6 +53,13 @@ const theme = createTheme({
           }
         }
       }
+    },
+    MuiListItemText: {
+      styleOverrides: {
+        root: {
+          marginBottom: 0
+        }
+      }
     }
   }
 });
