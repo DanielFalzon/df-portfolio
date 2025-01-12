@@ -32,7 +32,7 @@ const ExperienceList: FC<ExperienceListProps> = ({experienceItems}) => {
                         display: {md: 'none'}
                     }}
                 >
-                    <ExperienceListItemsMobile experienceItems={experienceItems} /> : 
+                    <ExperienceListItemsMobile experienceItems={experienceItems} />
                 </Box>
                 <Box
                     sx={{
