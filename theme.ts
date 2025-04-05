@@ -18,8 +18,12 @@ const raleway = Raleway({
 const theme = createTheme({
   typography: {
     fontFamily: raleway.style.fontFamily,
+    h1: {
+      margin: '45px 0px',
+      fontWeight: 'normal'
+    },
     h2: {
-      margin: '4rem 0rem',
+      margin: '2rem 0rem',
       textAlign: 'left',
       fontFamily: roboto.style.fontFamily
     },
@@ -52,7 +56,7 @@ const theme = createTheme({
             color: '#32406e'
           }
         }
-      }
+      }, 
     },
     MuiListItemText: {
       styleOverrides: {
@@ -60,7 +64,19 @@ const theme = createTheme({
           marginBottom: 0
         }
       }
-    }
+    },
+    MuiCardHeader: {
+      styleOverrides: {
+        title: {
+          fontStyle: 'italic',
+          fontSize: '1rem',
+        },
+        subheader: {
+          fontStyle: 'italic',
+          fontSize: '1rem',
+        },
+      },
+    },
   }
 });
 
