@@ -30,9 +30,21 @@ export type ImageProperties = {
     alt: string
 }
 
+export type BlogPost = {
+    id: string
+    title: string
+    imageUrl: string
+    content: string
+    slug: string
+    publishedAt: string
+    author: string
+    excerpt: string | undefined
+}
+
 export enum ContentItemType {
     h2 = "h2",
     h3 = "h3",
     p = "p",
     img = "img"
 }
+
