@@ -30,7 +30,6 @@ export default async function Home() {
           {recommendations && <Recommendations recommendations={recommendations} />}
           <Contact />
         </Container>
-      <Footer />
     </main>
   );
 }

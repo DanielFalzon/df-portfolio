@@ -34,7 +34,7 @@ export type BlogPost = {
     id: string
     title: string
     imageUrl: string
-    content: string
+    content: any
     slug: string
     publishedAt: string
     author: string

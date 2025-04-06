@@ -6,6 +6,7 @@ import theme from "@/theme";
 import HeaderMenu from "@/components/header-menu/HeaderMenu";
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import { ThemeProvider } from "@mui/material/styles";
+import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -28,7 +29,9 @@ export default async function RootLayout({
         <body>
           <header>
             <HeaderMenu menuItems={menuItems} />
-          </header>{children}
+          </header>
+            {children}
+          <Footer />
         </body>
         </ThemeProvider>
       </AppRouterCacheProvider>
