@@ -9,11 +9,7 @@ type RecommendationsProps = {
 
 const Recommendations: FC<RecommendationsProps> = ({recommendations}) => {
     return(
-        <Container
-            sx={{
-                textAlign: 'center'
-            }}
-        >
+        <>
             <Typography
                 variant="h2"
                 id='recommendations'
@@ -21,7 +17,7 @@ const Recommendations: FC<RecommendationsProps> = ({recommendations}) => {
                 Things People Say
             </Typography>
             <RecommendationSlider recommendations={recommendations} />
-        </Container>
+        </>
     )
 }
 

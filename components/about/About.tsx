@@ -9,10 +9,10 @@ type AboutProps = {
 
 const About: FC<AboutProps> = ({contentItems}) => {
     return (
-        <Container>
+        <>
             <Typography variant='h2' id='about'>About Me</Typography>
             <ContentLoader contentItems={contentItems} />
-        </Container>
+        </>
     )
 }
 

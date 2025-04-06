@@ -7,6 +7,8 @@ import { Divider, Grid, Typography } from "@mui/material";
 import BlogCard from "@/components/blog-card/BlogCard";
 import mapToBlogPost from "../sanity/mappers";
 import { BlogPost } from "@/types/Types";
+import BlogIntro from "@/components/blog-intro/BlogIntro";
+import Contact from "@/components/contact/Contact";
 
 const POSTS_QUERY = `*[
   _type == "post"
@@ -35,19 +37,27 @@ export default async function IndexPage() {
   return (
     <main className={styles.main}>
       <Typography variant="h1"> My Blog</Typography>
-      <Grid container spacing={4} justifyContent={"center"} sx={{ maxWidth: 370}}>
+      <Grid container spacing={4} justifyContent={"center"} sx={{ width: 370}}>
         {blogPosts.map((post) => (
           <Grid item xs={12}>
             <BlogCard {...post} key={post.id} />
           </Grid>
         ))}
 
-        <Grid item xs={12}>
+        <Grid item xs={12}>p
           <Divider sx={{ width: '100%', marginTop: '2rem'}} />
         </Grid>
       
+
         <Grid item xs={12}>
-          <Typography variant="h2"> About</Typography>
+          <BlogIntro
+            title="About the Blog"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras felis libero, interdum laoreet volutpat vel, vehicula et ligula. Mauris et lorem egestas, posuere odio eu, viverra quam. Integer sit amet sem erat. Cras sit amet arcu vel velit mattis gravida consequat eu lacus."
+          />
+        </Grid>
+
+        <Grid item xs={12}>
+          <Contact />
         </Grid>
       </Grid>
     </main>

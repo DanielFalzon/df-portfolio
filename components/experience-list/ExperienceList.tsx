@@ -17,7 +17,7 @@ const ExperienceList: FC<ExperienceListProps> = ({experienceItems}) => {
     const primaryColor = theme.palette.primary.main;
 
     return(
-        <Container>
+        <>
             <Typography variant="h2" id='experience'>
                 Experience
             </Typography>
@@ -42,7 +42,7 @@ const ExperienceList: FC<ExperienceListProps> = ({experienceItems}) => {
                     <ExperienceListItemsDesktop experienceItems={experienceItems} />
                 </Box>
             </Box>
-        </Container>
+        </>
     )
 }
 

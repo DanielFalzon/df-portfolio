@@ -3,7 +3,7 @@ import { Box, Button, Container, Typography } from "@mui/material"
 
 const Contact = () => {
     return(
-        <Container>
+        <>
             <Box>
                 <Typography variant='h2' id="contact">
                     Contact Me
@@ -64,7 +64,7 @@ const Contact = () => {
             </Box>
 
            
-        </Container>
+        </>
     )
 }
 
