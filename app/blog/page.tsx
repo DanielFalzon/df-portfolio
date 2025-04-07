@@ -66,7 +66,7 @@ export default async function IndexPage() {
           <Grid item xs={12}>
             <BlogIntro
               title="About the Blog"
-              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras felis libero, interdum laoreet volutpat vel, vehicula et ligula. Mauris et lorem egestas, posuere odio eu, viverra quam. Integer sit amet sem erat. Cras sit amet arcu vel velit mattis gravida consequat eu lacus."
+              content="Lorem ipsum sit amet, consectetur adipiscing elit. Cras felis libero, interdum laoreet volutpat vel, vehicula et ligula. Mauris et lorem egestas, posuere odio eu, viverra quam. Integer sit amet sem erat. Cras sit amet arcu vel velit mattis gravida consequat eu lacus."
             />
           </Grid>
 
